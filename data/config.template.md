@@ -165,6 +165,17 @@ go-ahead, flagging anything medical, named, addressed, or financial first.
 Publishing is a one-way door, so this defaults on. Set it to `no` once you trust
 what it puts up and would rather not be asked every week.
 
+```
+agenda_folder: <absolute path, optional>
+```
+
+Where the weekly PDF gets written, one file per week, named for the Monday it
+covers. **Point this at a shared cloud folder and the sharing problem solves
+itself** — your partner gets folder access once and always has the current week.
+No link to send, no account for them to make, nothing hosted publicly.
+
+Leave it blank and the PDF lands in your main folder instead.
+
 Sections, in order. Drop any you do not want.
 
 | Section | On | What it holds |

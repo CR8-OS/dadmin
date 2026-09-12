@@ -171,8 +171,25 @@ Nothing splits across a page break. Keep that rule if you rework the CSS —
 reverting to a flat seven-column grid in print is the obvious change and it
 makes the printout worse.
 
-Name it `week-ahead.pdf` and overwrite it each week. Say in one line that it is
-there, so it can be forwarded without anyone hunting for it.
+### Where to put it
+
+If config sets `agenda_folder`, write it there. Otherwise put it in the data
+folder.
+
+**Name it by the Monday of the week it covers**: `2026-09-14 Week Ahead.pdf`.
+Dating it that way means the files sort chronologically, the filename says which
+week without opening it, and the newest is always last.
+
+**Do not overwrite last week.** Each week is a new file. The archive answers
+questions a calendar cannot — what was going on when a kid had a hard month,
+when the dentist last came up, what October usually looks like. It costs nothing
+to keep and cannot be reconstructed once discarded.
+
+An `agenda_folder` pointing at a **shared** cloud folder is the best answer to
+the sharing problem. A partner gets folder access once and always has the
+current week, with no link to send, no account to create, and nothing hosted
+publicly. Say in one line where the file landed, so it can be found without
+hunting.
 
 ## Design
 
