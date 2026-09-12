@@ -163,10 +163,13 @@ chrome --headless=new --disable-gpu --no-pdf-header-footer \
 
 Edge works the same way if Chrome is absent.
 
-The page carries print styles that switch it to **landscape** and tighten the
-type, so all seven day columns keep their width on paper and nothing splits
-across a page break. Portrait crushes a seven-column grid into something nobody
-reads. Keep that `@page` rule if you rework the CSS.
+The page carries print styles that keep it **portrait** but wrap the week to
+**two rows of four days** rather than seven columns across. Seven columns on
+portrait letter is about an inch each, which nothing readable fits into; four
+gives each day close to two inches and still reads left-to-right as a week.
+Nothing splits across a page break. Keep that rule if you rework the CSS —
+reverting to a flat seven-column grid in print is the obvious change and it
+makes the printout worse.
 
 Name it `week-ahead.pdf` and overwrite it each week. Say in one line that it is
 there, so it can be forwarded without anyone hunting for it.
