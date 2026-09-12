@@ -169,10 +169,14 @@ what it puts up and would rather not be asked every week.
 agenda_folder: <absolute path, optional>
 ```
 
-Where the weekly PDF gets written, one file per week, named for the Monday it
-covers. **Point this at a shared cloud folder and the sharing problem solves
-itself** — your partner gets folder access once and always has the current week.
-No link to send, no account for them to make, nothing hosted publicly.
+Where the weekly PDF gets written. **Point this at a shared cloud folder and the
+sharing problem solves itself** — your partner gets folder access once and always
+has the current week. No link to send, no account for them to make, nothing
+hosted publicly.
+
+One file, `Week Ahead.pdf`, overwritten each week rather than a pile of dated
+copies. Old weeks live in your cloud provider's version history, which most
+providers age out after about a month unless you pin a version.
 
 Leave it blank and the PDF lands in your main folder instead.
 

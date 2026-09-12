@@ -176,14 +176,18 @@ makes the printout worse.
 If config sets `agenda_folder`, write it there. Otherwise put it in the data
 folder.
 
-**Name it by the Monday of the week it covers**: `2026-09-14 Week Ahead.pdf`.
-Dating it that way means the files sort chronologically, the filename says which
-week without opening it, and the newest is always last.
+**One file, overwritten in place.** `Week Ahead.pdf`, same name every week.
 
-**Do not overwrite last week.** Each week is a new file. The archive answers
-questions a calendar cannot — what was going on when a kid had a hard month,
-when the dentist last came up, what October usually looks like. It costs nothing
-to keep and cannot be reconstructed once discarded.
+Not dated filenames. A shared folder that accumulates a PDF a week is a folder
+nobody opens by March, and the partner it exists for has to work out which one
+is current. One file at a stable path means the link, the bookmark, and the
+phone shortcut all keep working, and "the agenda" is unambiguous.
+
+The history is not lost: cloud storage keeps prior versions of an overwritten
+file. **Say once that version history is where old weeks live**, and note that
+most providers age those out — Google Drive keeps them for around 30 days unless
+a version is explicitly marked to keep. If a household wants a durable archive,
+that is a deliberate choice to make, not a default to assume.
 
 An `agenda_folder` pointing at a **shared** cloud folder is the best answer to
 the sharing problem. A partner gets folder access once and always has the
