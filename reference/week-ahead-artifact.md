@@ -142,6 +142,35 @@ first publish and read it on every run after.
 Title it for the week: `Week of September 8`. Keep the favicon stable across
 weeks.
 
+## Write a PDF alongside it
+
+Publish the page, then render the same HTML to a PDF in the data folder.
+
+**This is not a fallback, it is the copy that gets sent.** Artifact sharing is
+account-scoped, so a partner outside the owner's organization often cannot be
+granted access at all without switching the page to anyone-with-the-link. A PDF
+sidesteps the question: it goes by text or email, needs no account, works
+offline, and leaves nothing hosted.
+
+Render it with headless Chrome against the local file:
+
+```
+chrome --headless=new --disable-gpu --no-pdf-header-footer \
+  --virtual-time-budget=8000 \
+  --print-to-pdf=<data folder>/week-ahead.pdf \
+  file:///<path to the html>
+```
+
+Edge works the same way if Chrome is absent.
+
+The page carries print styles that switch it to **landscape** and tighten the
+type, so all seven day columns keep their width on paper and nothing splits
+across a page break. Portrait crushes a seven-column grid into something nobody
+reads. Keep that `@page` rule if you rework the CSS.
+
+Name it `week-ahead.pdf` and overwrite it each week. Say in one line that it is
+there, so it can be forwarded without anyone hunting for it.
+
 ## Design
 
 A schedule, not a dashboard. It is closer to a wall calendar than to an

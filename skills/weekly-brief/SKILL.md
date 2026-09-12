@@ -111,8 +111,14 @@ and should keep working. Read the stored URL from
 `<data folder>/week-ahead-url.local.md`, pass it on publish, and write it back
 on the first run.
 
-Mention the page in one line at the end of the chat brief. Do not paste the URL
-into the reply — the card carries it.
+**Write a PDF alongside it**, into the data folder, from the same HTML. The
+artifact is account-scoped and often cannot be shared with a partner outside the
+owner's organization without opening it to anyone-with-the-link. The PDF goes by
+text, needs no account, and leaves nothing hosted. Method and the landscape
+print rule are in the reference file.
+
+Mention the page and the PDF in one line each at the end of the chat brief. Do
+not paste the URL into the reply — the card carries it.
 
 ## Rules specific to the brief
 
