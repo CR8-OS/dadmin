@@ -20,6 +20,27 @@ In the chat: **the group name → Export Chat → Without Media**, then save the
 Without Media matters. With media, a term of class photos runs to hundreds of
 megabytes of other people's children.
 
+### Take the `.txt`, not a converted format
+
+WhatsApp's own export is plain text. If something offers markdown or any other
+format, it has already parsed and reinterpreted the chat, and its choices are
+invisible here.
+
+Two things break in conversion:
+
+**Formatting characters.** WhatsApp marks bold with `*asterisks*` and italic
+with `_underscores_`. A markdown converter either strips them or renders them,
+and either way the text no longer matches what someone typed.
+
+**Line structure.** The parsing contract is that a leading timestamp starts a
+message and a line without one continues the previous message. Anything that
+reflows paragraphs or adds structure destroys that, and it fails silently —
+what survives is the first line of a long post about a venue change, without the
+address.
+
+A converted file also usually means a third-party export tool, which reopens
+the account-risk and privacy questions that taking the native export avoids.
+
 Exports are **cumulative** — each one contains the whole history, not just what
 is new. Dedup is therefore mandatory, and is handled below.
 
