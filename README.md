@@ -152,10 +152,20 @@ the folder you chose during setup — school calendar, sizes, medical dates,
 reciprocity ledger. Those files are yours, they stay on your machine and your
 own cloud drive, and they are gitignored.
 
-The one deliberate exception is the week-ahead page, which is a hosted artifact
-so you can send it to your partner. It is opt-in, it is private until you share
-it, and it carries schedule information only — no addresses, no phone numbers,
-no medical detail beyond the fact of an appointment.
+The week-ahead page is the one thing that leaves the folder, and it is designed
+to leave as a **file, not a link**. The page itself is an HTML file in your data
+folder, gitignored like everything else there. Each week it is printed to a
+dated PDF — `Week Ahead 2026-09-14.pdf`, named for that week's Monday — in an
+archive folder you choose. The PDF is what you send: it needs no account, works
+offline, and leaves nothing hosted.
+
+Publishing it as a hosted page is optional and off unless you ask. Either way it
+carries schedule information only — no addresses, no phone numbers, no medical
+detail beyond the fact of an appointment.
+
+One PDF per week, overwritten as the week updates, so the folder becomes a
+readable record of what each week actually looked like rather than a pile of
+near-identical drafts.
 
 ---
 
@@ -182,7 +192,19 @@ reference/
 data/
   config.template.md       the household config
   *.template.md            scaffolds copied into your folder at setup
+
+scripts/                   build and archive the week-ahead page (PowerShell)
+  install-paths.ps1        one-time: where your page and PDF archive live
+  publish-week-ahead.ps1   prints the dated weekly PDF
+  audit/repair-encoding    catch and reverse text corruption
+  check-fonts.ps1          asserts doctype, charset, inherited type
 ```
+
+`scripts/` is optional. The skills work without it; it exists so the weekly page
+builds the same way every time instead of being rebuilt by hand. See
+`scripts/README.md`, which also documents the two traps that cost the most time:
+PowerShell's default encoding, and the missing doctype that silently turns
+tables serif.
 
 The two files worth reading if you want to understand the thing:
 `reference/lead-times.md` and `reference/task-chains.md`. They are the accumulated

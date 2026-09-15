@@ -1,6 +1,6 @@
 {
   "name": "mrs-doubtfire",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Family operations quarterback. Tracks school deadlines, medical cadence, camp and afterschool registration windows, travel booking windows, parties and gifts, and seasonal household work. Works backwards from deadlines so actions land while they are still cheap, surfaces the second-order tasks most families miss, and publishes a weekly week-ahead page. Configured per household; nothing personal lives in the repo.",
   "author": {
     "name": "Christophe Jammet"

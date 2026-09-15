@@ -1,5 +1,64 @@
 # Changelog
 
+## 2.1.0 — 2026-09-15
+
+The week-ahead page grew a build process, after a week of it being rebuilt by
+hand and breaking in the same two ways each time.
+
+### Added
+
+- **`scripts/`.** Build and archive tooling for the weekly page:
+  `install-paths.ps1` (one-time path setup), `publish-week-ahead.ps1`,
+  `audit-encoding.ps1`, `repair-encoding.ps1`, `check-fonts.ps1`,
+  `shoot-both-themes.ps1`, `sync-spec-template.ps1`, `recycle.ps1`. Optional —
+  the skills work without them.
+- **Dated weekly PDF archive.** One file per week named for that week's Monday
+  (`Week Ahead 2026-09-14.pdf`), overwritten as the week updates rather than
+  accumulating near-identical drafts. An undated filename is indistinguishable
+  from a stale one six days later, which is the failure the page exists to
+  prevent.
+- **Dark mode** for the page, carrying the same meanings rather than inverted
+  colours: warm tint still means act on this, cells still lift off the ground,
+  standing facts still recess. Print always forces light.
+- **Guards that fail loudly.** `publish-week-ahead.ps1` refuses to print a page
+  containing mojibake; `check-fonts.ps1` asserts doctype, charset and inherited
+  type. Both failures used to be silent and reach the archive.
+
+### Changed
+
+- **Contrast raised**, weighted toward the smallest text. The 11px keys under
+  each event were the weakest thing on the page and are what gets read from
+  across a kitchen. Category colours darkened — they were mid-tone pastels that
+  looked fine on screen and vanished on paper.
+- **Horizon table margins.** It was the only surface with no horizontal padding,
+  text flush against both rule ends, and its description column ran the full
+  page width at roughly 140 characters a line. Now capped and inset.
+- **Paths are configured, not hardcoded.** Machine-specific locations live in
+  `~/.mrs-doubtfire/paths.json`, outside the repo. No personal path ships in a
+  public, household-agnostic plugin.
+- **The week-ahead page is delivered as a file, not a link.** README corrected:
+  it had described a hosted artifact as the mechanism. Hosting is now optional
+  and off unless asked.
+- **`reference/data-sources.md`** named a `_Doubtfire` data folder that does not
+  exist — the convention is `_MrsDoubtfire`. Anyone following the docs would
+  have created the wrong folder. Placeholders now read as placeholders,
+  including the Google Drive letter, which is not always `G:`.
+
+### Fixed
+
+- **Encoding corruption.** A `Get-Content -Raw` / `Set-Content -Encoding UTF8`
+  round-trip on PowerShell 5.1 reads through the ANSI codepage and writes a BOM,
+  turning every accented name into mojibake and the BOM into a stray glyph at
+  the top-left of the page. Fixed at the source with explicit UTF-8 byte I/O,
+  plus a repair script and a publish-time guard.
+- **`<meta charset="utf-8">` was absent.** The file was valid UTF-8 with nothing
+  saying so, so anything opening it from disk could fall back to the system
+  codepage and mangle every accented name.
+- **Missing doctype turned tables serif.** Without `<!DOCTYPE html>` the browser
+  uses quirks mode, where `<table>` does not inherit `font-family` from `<body>`
+  — so the horizon table fell back to Times New Roman while the rest of the page
+  stayed sans. No serif was ever declared anywhere.
+
 ## 2.0.0 — 2026-09-08
 
 Genericized for any household, and made public.

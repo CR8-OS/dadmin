@@ -23,12 +23,16 @@ The data folder is wherever the parent put it. Take the path from config
 verbatim. Do not assume an operating system, a drive letter, or a sync product.
 
 ```
-Windows   C:\Users\you\Family\_Doubtfire
-          G:\My Drive\Family\_Doubtfire     (Google Drive for Desktop)
-Mac       /Users/you/Library/Mobile Documents/com~apple~CloudDocs/Family/_Doubtfire
-          /Users/you/Dropbox/Family/_Doubtfire
-Linux     /home/you/family/_doubtfire
+Windows   C:\Users\<you>\Family\_MrsDoubtfire
+          <drive>:\My Drive\Family\_MrsDoubtfire   (Google Drive for Desktop)
+Mac       /Users/<you>/Library/Mobile Documents/com~apple~CloudDocs/Family/_MrsDoubtfire
+          /Users/<you>/Dropbox/Family/_MrsDoubtfire
+Linux     /home/<you>/family/_mrsdoubtfire
 ```
+
+Every part in `<angle brackets>` is a placeholder, including the Google Drive
+letter — it is assigned at install time and is not always `G:`. The folder name
+is a convention, not a requirement: whatever `config.md` says wins.
 
 Build every other path by joining onto the configured folder. A path hardcoded
 into a skill file belongs to one household and breaks for everyone else.
