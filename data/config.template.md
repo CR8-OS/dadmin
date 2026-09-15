@@ -180,6 +180,22 @@ providers age out after about a month unless you pin a version.
 
 Leave it blank and the PDF lands in your main folder instead.
 
+```
+deploy_command: <optional>
+```
+
+A command to run after the page is built — for publishing it somewhere your
+household can reach on a phone. Left blank, nothing is deployed.
+
+**Whatever you point this at must be behind a login.** The page carries a
+child's school, schedule and appointments. Most hosting defaults to a public URL
+and makes privacy the extra step, so the honest test is to open the address in a
+private window and confirm you are stopped.
+
+If that sounds like more than you want to maintain, skip it. A shared cloud
+folder with the PDF in it does most of the same work and cannot accidentally be
+world-readable.
+
 Sections, in order. Drop any you do not want.
 
 | Section | On | What it holds |

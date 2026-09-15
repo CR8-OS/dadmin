@@ -111,14 +111,30 @@ and should keep working. Read the stored URL from
 `<data folder>/week-ahead-url.local.md`, pass it on publish, and write it back
 on the first run.
 
-**Write a PDF alongside it**, into the data folder, from the same HTML. The
-artifact is account-scoped and often cannot be shared with a partner outside the
-owner's organization without opening it to anyone-with-the-link. The PDF goes by
-text, needs no account, and leaves nothing hosted. Method and the landscape
-print rule are in the reference file.
+**Write a PDF alongside it**, into `agenda_folder` if config sets one, otherwise
+the data folder. Method and the print rules are in the reference file.
 
-Mention the page and the PDF in one line each at the end of the chat brief. Do
-not paste the URL into the reply — the card carries it.
+**Deploy it, if config sets `deploy_command`.** Run that command after the page
+is written. It is the household's own script and it knows where the page goes.
+
+Three destinations, because each reaches a different person in a different way:
+
+| Where | Who it is for |
+|---|---|
+| The artifact | The parent running the brief, in this conversation |
+| The PDF in a shared folder | A partner, with no link to open and nothing to sign into |
+| The deployed page | A partner on a phone, wanting the current week at a glance |
+
+A household will usually want one or two of those, not all three. Do only what
+config asks for and do not offer the others unprompted.
+
+**If a deploy fails, say so plainly and say what is still current.** A stale
+dashboard that nobody knows is stale is worse than a missing one — the parent
+reads Tuesday's page on Friday and believes it. Name the failure, name the date
+of what is showing, and carry on with the rest of the brief.
+
+Mention each destination in one line at the end of the chat brief. Do not paste
+the artifact URL — the card carries it.
 
 ## Rules specific to the brief
 
