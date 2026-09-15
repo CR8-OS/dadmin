@@ -20,31 +20,47 @@ In the chat: **the group name → Export Chat → Without Media**, then save the
 Without Media matters. With media, a term of class photos runs to hundreds of
 megabytes of other people's children.
 
-### Take the `.txt`, not a converted format
+### Which file, when the export contains two
 
-WhatsApp's own export is plain text. If something offers markdown or any other
-format, it has already parsed and reinterpreted the chat, and its choices are
-invisible here.
+Exporting from **WhatsApp Web gives a zip with both a `.md` and a `.txt`**. Both
+are WhatsApp's own output, not a third-party conversion, so neither carries the
+account-risk or privacy questions that an external export tool would.
 
-Two things break in conversion:
+**Default to the `.txt`.** The format notes below describe it, it is the
+long-standing shape, and it is what someone actually typed — including the
+`*asterisks*` and `_underscores_` WhatsApp uses for bold and italic, which a
+markdown rendering may consume as formatting rather than leave as text.
 
-**Formatting characters.** WhatsApp marks bold with `*asterisks*` and italic
-with `_underscores_`. A markdown converter either strips them or renders them,
-and either way the text no longer matches what someone typed.
+**Check the `.md` before dismissing it.** If it preserves message boundaries
+with real structure, it may parse more reliably than timestamp-prefix matching.
+Open both once for a given phone and keep whichever holds up, then record the
+choice in `whatsapp-processed.local.md` so the decision is not re-litigated
+every week.
 
-**Line structure.** The parsing contract is that a leading timestamp starts a
-message and a line without one continues the previous message. Anything that
-reflows paragraphs or adds structure destroys that, and it fails silently —
-what survives is the first line of a long post about a venue change, without the
-address.
+What matters either way is the **line-continuation rule**: a long post carrying
+a venue and a time wraps across several lines, and any format that reflows
+paragraphs will silently leave you with the first sentence and no address. Test
+that specifically on a real multi-line message before trusting a format.
 
-A converted file also usually means a third-party export tool, which reopens
-the account-risk and privacy questions that taking the native export avoids.
+If the export came from a phone rather than the web, expect `.txt` only.
 
 Exports are **cumulative** — each one contains the whole history, not just what
 is new. Dedup is therefore mandatory, and is handled below.
 
 ## The file format
+
+Verified against a real 662-line export from a 1st-grade class group, and the
+numbers are worth knowing before writing a parser:
+
+| | |
+|---|---|
+| Timestamped lines | 506 |
+| **Continuation lines** | **156, or roughly a quarter of the file** |
+| Encoding | UTF-8. Read it as UTF-8 or apostrophes, accented names and emoji all mangle |
+
+A quarter of the file being continuations is the headline. Match only on
+timestamped lines and you throw away a quarter of what was said, including the
+long posts that carry venues, times and instructions.
 
 Two shapes, depending on the phone that produced it.
 
