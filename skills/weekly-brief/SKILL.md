@@ -61,6 +61,19 @@ shoe size. Last time the two adults talked about the summer.
 
    Record the answer in the social ledger so the same host does not have to be
    classified twice.
+4b. **Read any new WhatsApp class-group export.** Look in
+   `<data folder>/whatsapp/` for a `.txt` newer than the high-water mark in
+   `whatsapp-processed.local.md`. Parse only what is new, classify each event,
+   and update the mark. Full method, including the dedup rule and what to
+   ignore, is in `reference/whatsapp-export.md`.
+
+   This is where the social calendar actually lives — a class rep posting a
+   venue change at 10pm is the single most-missed category, because the original
+   went on the calendar weeks earlier and this is the correction.
+
+   **If the newest export is more than two weeks old, say so** and name the
+   date. A stale export reads exactly like a quiet group chat, and the parent
+   cannot tell the difference without being told.
 5. **Pull open tasks** so nothing gets duplicated and overdue items surface.
 6. **Walk `reference/lead-times.md` against today.** For every row, ask whether
    the action date for the next instance falls inside the next 7 days. If yes,

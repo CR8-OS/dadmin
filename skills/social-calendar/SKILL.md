@@ -31,6 +31,16 @@ The ledger lives at `<data folder>/social-ledger.local.md`. It holds
 reciprocity, gift history, gift ideas, and date night ideas. The schema is in
 this repo under `data/social-ledger.template.md`.
 
+## Where invitations actually arrive
+
+Not email. For most families the class group chat carries more of the social
+calendar than every other channel combined, and it is the one nothing indexes.
+
+If the household exports their class group, `reference/whatsapp-export.md` has
+the method. The category that matters most there is not new invitations but
+**changes** — a venue or time moving after the original already went on the
+calendar. That correction is the single most-missed item in this whole domain.
+
 ## Kids' parties
 
 **The 48-hour RSVP rule is absolute.** An invitation gets a response within 48
