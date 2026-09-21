@@ -1,6 +1,6 @@
 ---
 name: school-ops
-description: School operations for every child in the household. Use for ingesting a school calendar, forms and deadlines, parent-teacher conferences, re-enrollment and tuition, district lottery and transfer windows, permission slips, class events, teacher correspondence, and special education evaluation timelines when that domain is switched on. Triggers on "what's due at school", "here is the school calendar", "when is the next day off", conference sign-ups, re-enrollment and tuition questions, and IEP, 504 or evaluation questions. Part of the mrs-doubtfire plugin.
+description: School operations for every child in the household. Use for ingesting a school calendar, forms and deadlines, parent-teacher conferences, re-enrollment and tuition, district lottery and transfer windows, permission slips, class events, teacher correspondence, and special education evaluation timelines when that domain is switched on. Triggers on "what's due at school", "here is the school calendar", "when is the next day off", conference sign-ups, re-enrollment and tuition questions, and IEP, 504 or evaluation questions. Part of the dadmin plugin.
 ---
 
 # School ops

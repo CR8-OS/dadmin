@@ -66,7 +66,7 @@ How school and family mail gets found.
 ```
 connector: <which Gmail or mail connector is attached>
 account: <the address that receives school mail>
-flag_label: doubtfire
+flag_label: dadmin
 ```
 
 **The flag label is the escape hatch.** Create a label in Gmail with this name.
@@ -109,7 +109,7 @@ send that category to the fallback.
 | fallback | |
 
 ```
-tag: doubtfire
+tag: dadmin
 ```
 
 Every task gets this tag so you can filter or delete everything the skill made.

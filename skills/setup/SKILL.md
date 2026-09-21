@@ -1,6 +1,6 @@
 ---
 name: setup
-description: First-run onboarding for the family operations plugin. Interviews the parent and writes their household config — data folder, kids, school email domains, the mail flag label, which task manager they use, which domains to track, and weekly brief preferences. Use on the very first run, when no config exists at config.md in your connected folder, when the user says "set up", "get started", "configure", "onboard me", "reconfigure", or "change what you track", and whenever another skill fails because a config field is missing. Part of the mrs-doubtfire plugin.
+description: First-run onboarding for the family operations plugin. Interviews the parent and writes their household config — data folder, kids, school email domains, the mail flag label, which task manager they use, which domains to track, and weekly brief preferences. Use on the very first run, when no config exists at config.md in your connected folder, when the user says "set up", "get started", "configure", "onboard me", "reconfigure", or "change what you track", and whenever another skill fails because a config field is missing. Part of the dadmin plugin.
 ---
 
 # Setup
@@ -67,7 +67,7 @@ and asks.
 Say why in one line before asking: this folder is where it remembers things, and
 a synced one — Drive, Dropbox, iCloud, OneDrive — survives a new laptop.
 
-Once connected, that folder **is** the Mrs. Doubtfire folder. Config at its
+Once connected, that folder **is** the Dadmin folder. Config at its
 root as `config.md`, data files alongside it, `inbox/` underneath for
 attachments. One location, no second path to keep track of.
 
@@ -187,8 +187,8 @@ most expensive failure mode here.
 Close with these. They are the difference between a plugin that works and one
 abandoned in a month.
 
-**One: make the mail label.** Have them create a label called `doubtfire` plus a
-`doubtfire/done` sub-label. Anything they label gets picked up and treated as
+**One: make the mail label.** Have them create a label called `dadmin` plus a
+`dadmin/done` sub-label. Anything they label gets picked up and treated as
 deliberate. It is how everything the keyword searches miss still gets caught,
 and it takes thirty seconds.
 

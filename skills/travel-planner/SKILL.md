@@ -1,6 +1,6 @@
 ---
 name: travel-planner
-description: Family trip planning with booking-window discipline. Use for vacations, flights, hotels, award seat strategy, passport validity and renewals, school-calendar-aware trip windows, packing lists, and trip-week logistics. Triggers on "when should I book", "we should go to X", "is this a good fare", award and upgrade questions, passport expiry questions, and any request to plan or price a trip. Part of the mrs-doubtfire plugin.
+description: Family trip planning with booking-window discipline. Use for vacations, flights, hotels, award seat strategy, passport validity and renewals, school-calendar-aware trip windows, packing lists, and trip-week logistics. Triggers on "when should I book", "we should go to X", "is this a good fare", award and upgrade questions, passport expiry questions, and any request to plan or price a trip. Part of the dadmin plugin.
 ---
 
 # Travel planner

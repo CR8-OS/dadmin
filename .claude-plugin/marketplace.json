@@ -4,10 +4,10 @@
     "name": "Christophe Jammet",
     "url": "https://github.com/CR8-OS"
   },
-  "description": "Plugins for running a household. Mrs. Doubtfire is the public one; cj-gmail-mcp is private and personal to the author.",
+  "description": "Plugins for running a household. Dadmin is the public one; cj-gmail-mcp is private and personal to the author.",
   "plugins": [
     {
-      "name": "mrs-doubtfire",
+      "name": "dadmin",
       "source": "./",
       "description": "Family operations quarterback. Tracks school deadlines, medical cadence, camp and afterschool registration windows, travel booking windows, parties and gifts, and seasonal household work. Works backwards from deadlines so actions land while they are still cheap.",
       "category": "productivity",

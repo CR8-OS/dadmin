@@ -1,6 +1,6 @@
 ---
 name: social-calendar
-description: Family social obligations and the relationships around them. Use for kids' birthday parties and RSVPs, gifts and gift ideas, a child's own birthday and party planning, anniversaries, a partner's birthday, date nights, sitters, thank-you notes, and reciprocity with other families. Triggers on an invitation arriving, "did we RSVP", "what should we get them", "plan something for our anniversary", "we need a date night", and any gift question. Part of the mrs-doubtfire plugin.
+description: Family social obligations and the relationships around them. Use for kids' birthday parties and RSVPs, gifts and gift ideas, a child's own birthday and party planning, anniversaries, a partner's birthday, date nights, sitters, thank-you notes, and reciprocity with other families. Triggers on an invitation arriving, "did we RSVP", "what should we get them", "plan something for our anniversary", "we need a date night", and any gift question. Part of the dadmin plugin.
 ---
 
 # Social calendar

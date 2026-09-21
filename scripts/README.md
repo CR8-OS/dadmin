@@ -10,12 +10,12 @@ household-agnostic. Record your own layout first:
 
 ```powershell
 .\install-paths.ps1 `
-  -Data    'X:\path\to\your\_MrsDoubtfire' `
-  -Archive 'X:\path\to\Mrs Doubtfire Agendas' `
+  -Data    'X:\path\to\your\_Dadmin' `
+  -Archive 'X:\path\to\Dadmin Agendas' `
   -FromPage 'X:\path\to\current\week-ahead.html'
 ```
 
-That writes `~/.mrs-doubtfire/paths.json` and copies the page to its permanent
+That writes `~/.dadmin/paths.json` and copies the page to its permanent
 home. Every other script then runs with no arguments. `MRSD_DATA`,
 `MRSD_ARCHIVE` and `MRSD_PAGE` override the config if you need them to.
 

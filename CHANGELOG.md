@@ -34,13 +34,13 @@ hand and breaking in the same two ways each time.
   text flush against both rule ends, and its description column ran the full
   page width at roughly 140 characters a line. Now capped and inset.
 - **Paths are configured, not hardcoded.** Machine-specific locations live in
-  `~/.mrs-doubtfire/paths.json`, outside the repo. No personal path ships in a
+  `~/.dadmin/paths.json`, outside the repo. No personal path ships in a
   public, household-agnostic plugin.
 - **The week-ahead page is delivered as a file, not a link.** README corrected:
   it had described a hosted artifact as the mechanism. Hosting is now optional
   and off unless asked.
-- **`reference/data-sources.md`** named a `_Doubtfire` data folder that does not
-  exist — the convention is `_MrsDoubtfire`. Anyone following the docs would
+- **`reference/data-sources.md`** named a `_Dadmin` data folder that does not
+  exist — the convention is `_Dadmin`. Anyone following the docs would
   have created the wrong folder. Placeholders now read as placeholders,
   including the Google Drive letter, which is not always `G:`.
 

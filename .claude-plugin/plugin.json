@@ -1,12 +1,12 @@
 {
-  "name": "mrs-doubtfire",
+  "name": "dadmin",
   "version": "2.1.0",
   "description": "Family operations quarterback. Tracks school deadlines, medical cadence, camp and afterschool registration windows, travel booking windows, parties and gifts, and seasonal household work. Works backwards from deadlines so actions land while they are still cheap, surfaces the second-order tasks most families miss, and publishes a weekly week-ahead page. Configured per household; nothing personal lives in the repo.",
   "author": {
     "name": "Christophe Jammet"
   },
-  "homepage": "https://github.com/CR8-OS/mrs-doubtfire",
-  "repository": "https://github.com/CR8-OS/mrs-doubtfire",
+  "homepage": "https://github.com/CR8-OS/dadmin",
+  "repository": "https://github.com/CR8-OS/dadmin",
   "license": "MIT",
   "keywords": [
     "family",

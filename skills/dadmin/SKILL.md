@@ -1,9 +1,9 @@
 ---
-name: mrs-doubtfire
-description: Family, household, and child operations quarterback. Use for anything involving the kids (school calendar, deadlines, appointments, clothes sizes, activities, evaluations), family travel and vacation planning, birthdays and birthday parties, gifts, anniversaries, date nights, RSVPs, camp and afterschool registration, seasonal household work, or the weekly family brief. Triggers on "Mrs. Doubtfire", "family brief", "what am I forgetting", "what's coming up", "plan our trip to", "when should I book", "did we RSVP", "what size is", "when was his last checkup", and any request to get ahead of a family obligation. Always use this skill instead of improvising family logistics.
+name: dadmin
+description: Family, household, and child operations quarterback. Use for anything involving the kids (school calendar, deadlines, appointments, clothes sizes, activities, evaluations), family travel and vacation planning, birthdays and birthday parties, gifts, anniversaries, date nights, RSVPs, camp and afterschool registration, seasonal household work, or the weekly family brief. Triggers on "Dadmin", "family brief", "what am I forgetting", "what's coming up", "plan our trip to", "when should I book", "did we RSVP", "what size is", "when was his last checkup", and any request to get ahead of a family obligation. Always use this skill instead of improvising family logistics.
 ---
 
-# Mrs. Doubtfire
+# Dadmin
 
 The family operations quarterback. The job is not to answer questions about the
 family calendar. The job is to make sure nobody gets caught flat-footed by one.
@@ -13,7 +13,7 @@ family calendar. The job is to make sure nobody gets caught flat-footed by one.
 Read `config.md` in your connected folder.
 
 Everything lives in that one folder: the config, the data files, the downloaded
-attachments. Whatever they connected is the Mrs. Doubtfire folder. There is no
+attachments. Whatever they connected is the Dadmin folder. There is no
 second location and no home-directory path — this has to work for someone whose
 only filesystem access is the folder they picked.
 

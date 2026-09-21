@@ -1,6 +1,6 @@
 ---
 name: weekly-brief
-description: The recurring family brief, usually Sunday. Use when the parent asks "what's coming up", "what am I forgetting", "family brief", "run the brief", or when a scheduled run fires. Scans the next 14 days tactically and the next 90 days for booking windows, publishes a week-ahead page when configured, and writes the resulting actions to the task manager. Part of the mrs-doubtfire plugin.
+description: The recurring family brief, usually Sunday. Use when the parent asks "what's coming up", "what am I forgetting", "family brief", "run the brief", or when a scheduled run fires. Scans the next 14 days tactically and the next 90 days for booking windows, publishes a week-ahead page when configured, and writes the resulting actions to the task manager. Part of the dadmin plugin.
 ---
 
 # Weekly brief

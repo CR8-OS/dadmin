@@ -1,6 +1,8 @@
-# Mrs. Doubtfire
+# Dadmin
 
-<img src="mrs-doubtfire.jpg" alt="Mrs. Doubtfire peeling back the mask to reveal a Terminator endoskeleton underneath" width="560">
+<!-- TODO before listing: needs original artwork. The previous image was a film
+     still and has been removed - see "A note on the name". -->
+
 
 A Claude plugin that keeps track of the family logistics that fall through.
 
@@ -46,13 +48,13 @@ This repo is its own marketplace, so you add it once and install from it.
 **In Claude Code:**
 
 ```
-/plugin marketplace add CR8-OS/mrs-doubtfire
-/plugin install mrs-doubtfire@cr8os-family
+/plugin marketplace add CR8-OS/dadmin
+/plugin install dadmin@cr8os-family
 ```
 
 **In the Claude desktop app**, once the marketplace above is added: click the
 **+** next to the prompt box, choose **Plugins → Add plugin**, and pick
-Mrs. Doubtfire from the browser.
+Dadmin from the browser.
 
 Worth knowing: the desktop plugin browser lists plugins from marketplaces you
 have already configured. Adding a *new* marketplace may still need the
@@ -68,7 +70,7 @@ Updating later:
 
 ## Setup
 
-Once installed, say **"set up Mrs. Doubtfire"**. Nothing prompts you — you have
+Once installed, say **"set up Dadmin"**. Nothing prompts you — you have
 to ask.
 
 Six questions, about two minutes:
@@ -96,7 +98,7 @@ from it. Without one the whole school domain is guessing.
 called overdue until something knows when it last happened, so until these exist
 the medical side stays silent.
 
-**Make a mail label called `doubtfire`**, plus a `doubtfire/done` sub-label.
+**Make a mail label called `dadmin`**, plus a `dadmin/done` sub-label.
 Anything you label gets picked up on the next run and treated as deliberate,
 outranking every keyword guess. It is how the things a search would never have
 found still get caught. Thirty seconds, and the highest-leverage minute here.
@@ -174,7 +176,7 @@ near-identical drafts.
 ```
 skills/
   setup/              first-run onboarding, writes your config
-  mrs-doubtfire/      the router and the operating doctrine
+  dadmin/      the router and the operating doctrine
   school-ops/         calendar ingestion, deadlines, conferences, IEP
   health-growth/      medical cadence, sizes, seasonal buying
   travel-planner/     booking windows, passports, trip logistics
@@ -236,7 +238,7 @@ sure what it wanted. That is more useful than a bug report about the code.
 
 Two known rough edges:
 
-**Nothing announces setup.** You have to say "set up Mrs. Doubtfire". If you
+**Nothing announces setup.** You have to say "set up Dadmin". If you
 install it and start asking family questions first, it will not know anything.
 
 **The desktop install path is less tested than the terminal one.** If the plugin
@@ -258,8 +260,12 @@ Everything here is an implementation of that observation. Thanks, Sam.
 
 ## A note on the name
 
-Named after the film, affectionately. No affiliation with anyone who owns
-anything related to it.
+"Dadmin" is the unglamorous administrative half of parenting — the forms, the
+deadlines, the registration windows, the appointment nobody booked. The name is
+the job description.
+
+It is not named after, affiliated with, or derived from any film, character or
+brand.
 
 ---
 

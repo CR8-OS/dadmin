@@ -1,6 +1,6 @@
 ---
 name: household-seasonal
-description: Household and seasonal operations. Use for summer camp and afterschool registration windows, seasonal closet and home swaps, recurring home maintenance, building or landlord requirements, holiday planning, and childcare coverage for school closures. Triggers on camp registration, "what do we need to do before winter", holiday planning, and coverage gaps. Part of the mrs-doubtfire plugin.
+description: Household and seasonal operations. Use for summer camp and afterschool registration windows, seasonal closet and home swaps, recurring home maintenance, building or landlord requirements, holiday planning, and childcare coverage for school closures. Triggers on camp registration, "what do we need to do before winter", holiday planning, and coverage gaps. Part of the dadmin plugin.
 ---
 
 # Household and seasonal
@@ -44,7 +44,7 @@ in March when somebody notices summer is coming.
 Sequence:
 
 1. **December**: decide what the child is doing. This is a conversation between
-   the parents, not a task Mrs. Doubtfire resolves. Surface it as a decision
+   the parents, not a task Dadmin resolves. Surface it as a decision
    with options.
 2. Confirm the exact registration open date and time for each program. Search
    for it; do not assume last year's date.
@@ -123,4 +123,4 @@ config; see `reference/task-routing.md`. Never hardcode a project name or ID.
 | Camp deposits and tuition | `money` |
 | Holiday hosting and gifts | `social and gifts` |
 
-Tag `doubtfire` + `household`.
+Tag `dadmin` + `household`.

@@ -1,6 +1,6 @@
 ---
 name: health-growth
-description: Medical cadence and physical growth, tracked per child. Use for doctor, dentist, vision, therapy and specialist appointments, immunizations, evaluations, insurance claims, and for tracking clothing and shoe sizes with seasonal buying. Triggers on "when was the last checkup", "what size is he in now", "book the dentist", "does she need new shoes", "is anyone overdue for anything", growth questions, and appointment scheduling. Part of the mrs-doubtfire plugin.
+description: Medical cadence and physical growth, tracked per child. Use for doctor, dentist, vision, therapy and specialist appointments, immunizations, evaluations, insurance claims, and for tracking clothing and shoe sizes with seasonal buying. Triggers on "when was the last checkup", "what size is he in now", "book the dentist", "does she need new shoes", "is anyone overdue for anything", growth questions, and appointment scheduling. Part of the dadmin plugin.
 ---
 
 # Health and growth
@@ -69,7 +69,7 @@ they sit.
 
 ### Boundaries
 
-Mrs. Doubtfire tracks and schedules. She does not diagnose, interpret test
+Dadmin tracks and schedules. She does not diagnose, interpret test
 results, or advise on treatment. If the parent asks a clinical question, give
 what context is genuinely useful, then point at the pediatrician. Be especially
 careful with anything touching a neurodevelopmental evaluation: describing the
@@ -136,7 +136,7 @@ ID into a task.
 | Clothes, shoes, outerwear, gear | `shopping` |
 | Insurance claims and reimbursements | `money` |
 
-Tag `doubtfire` plus `medical` or `growth`.
+Tag `dadmin` plus `medical` or `growth`.
 
 **Always put the child's name and current size in the body of any clothing
 task.** The whole point is that the parent can act on it from a phone in a

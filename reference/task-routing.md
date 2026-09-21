@@ -109,7 +109,7 @@ body     Dr. Chen, (212) 555-0188. Last visit 2025-09-14, from health-log.
          six weeks out, so calling now is the last comfortable moment.
          Ask them to send the form directly to the school nurse.
 priority highest
-tags     doubtfire, medical
+tags     dadmin, medical
 ```
 
 Bad:

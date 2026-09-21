@@ -23,11 +23,11 @@ The data folder is wherever the parent put it. Take the path from config
 verbatim. Do not assume an operating system, a drive letter, or a sync product.
 
 ```
-Windows   C:\Users\<you>\Family\_MrsDoubtfire
-          <drive>:\My Drive\Family\_MrsDoubtfire   (Google Drive for Desktop)
-Mac       /Users/<you>/Library/Mobile Documents/com~apple~CloudDocs/Family/_MrsDoubtfire
-          /Users/<you>/Dropbox/Family/_MrsDoubtfire
-Linux     /home/<you>/family/_mrsdoubtfire
+Windows   C:\Users\<you>\Family\_Dadmin
+          <drive>:\My Drive\Family\_Dadmin   (Google Drive for Desktop)
+Mac       /Users/<you>/Library/Mobile Documents/com~apple~CloudDocs/Family/_Dadmin
+          /Users/<you>/Dropbox/Family/_Dadmin
+Linux     /home/<you>/family/_mrsdadmin
 ```
 
 Every part in `<angle brackets>` is a placeholder, including the Google Drive
@@ -127,7 +127,7 @@ Whether one is available depends on what the parent has installed.
 
 ### The flag label
 
-The parent applies the flag label from config, `doubtfire` by default, to
+The parent applies the flag label from config, `dadmin` by default, to
 anything they want acted on.
 
 **Search that label first, every run.** A hand-applied label is a deliberate
