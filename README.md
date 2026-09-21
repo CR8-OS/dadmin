@@ -1,7 +1,7 @@
 # Dadmin!
 
-<!-- TODO before listing: needs original artwork. The previous image was a film
-     still and has been removed - see "A note on the name". -->
+<img src="dadmin-header-cream.png" alt="A 1950s father at a desk with a typewriter, a stack of forms and a wall calendar, beside the words IT'S DADMIN!" width="851">
+
 
 
 A Claude plugin that keeps track of the family logistics that fall through.
