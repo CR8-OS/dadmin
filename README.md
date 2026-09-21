@@ -264,6 +264,18 @@ Everything here is an implementation of that observation. Thanks, Sam.
 deadlines, the registration windows, the appointment nobody booked. The name is
 the job description.
 
+It is also pointed. The research on cognitive labor is fairly consistent: in
+most households the work of *noticing* — that the form is due Friday, that the
+shoes no longer fit, that camp registration opens Tuesday and closes Thursday —
+falls to mothers. It is invisible precisely because doing it well means nothing
+goes wrong, so it only ever becomes visible when it fails. That is a bad deal,
+and it is usually not a deal anyone agreed to out loud.
+
+This was built by a dad who was not carrying his half of it. A tool does not
+redistribute anything by itself; people do. What it can do is make the noticing
+legible — and the noticing is the hardest part to hand over, because you cannot
+share out a job nobody has written down.
+
 It is not named after, affiliated with, or derived from any film, character or
 brand.
 
