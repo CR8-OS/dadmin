@@ -1,7 +1,19 @@
-# Dadmin!
+<p align="center">
+  <img src="dadmin-header-cream.png" alt="A 1950s father at a desk with a typewriter, a stack of forms and a wall calendar, beside the words IT'S DADMIN!" width="700">
+</p>
 
-<img src="dadmin-header-cream.png" alt="A 1950s father at a desk with a typewriter, a stack of forms and a wall calendar, beside the words IT'S DADMIN!" width="851">
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-black.svg" alt="License: MIT"></a>
+  <a href="https://github.com/CR8-OS/dadmin/releases"><img src="https://img.shields.io/badge/version-2.1.0-black.svg" alt="Version 2.1.0"></a>
+  <img src="https://img.shields.io/badge/Claude-plugin-black.svg" alt="Claude plugin">
+  <a href="https://github.com/CR8-OS"><img src="https://img.shields.io/badge/by-CR8--OS-black.svg" alt="by CR8-OS"></a>
+</p>
 
+<p align="center">
+  <a href="https://ko-fi.com/W7W7H4VS6"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+</p>
+
+---
 
 
 A Claude plugin that keeps track of the family logistics that fall through.
@@ -281,4 +293,24 @@ brand.
 
 ---
 
-MIT licensed. Use it, fork it, change it.
+## If it saves you something
+
+This is free, MIT, and yours to fork. But the whole premise is that noticing
+early is cheaper than noticing late — so if Dadmin catches one camp registration
+before it closes, or one set of flights before the fare climbs four hundred
+dollars, it has already paid for several years of itself. If you are feeling
+flush with money you did not have to spend, there is a Ko-fi link below. Tips go
+into building more of these, because most family admin fails for the same reason
+this one did: nobody was tracking the window.
+
+If it caught nothing, you owe me nothing. Seems fair.
+
+<p align="center">
+  <a href="https://ko-fi.com/W7W7H4VS6"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+</p>
+
+More tools at [github.com/CR8-OS](https://github.com/CR8-OS).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
