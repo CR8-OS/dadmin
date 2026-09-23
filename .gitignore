@@ -21,3 +21,14 @@ Thumbs.db
 .env.*
 credentials.json
 token.json
+
+# Promo and storefront material.
+# Everything here except the README and the listing copy is deliberately
+# uncommitted: this folder holds material the repo cannot relicense under MIT
+# (stock art, reference images, screenshots of other products). See promo/README.md.
+promo/*
+!promo/README.md
+!promo/kofi-listing.md
+
+# Build artifact. Duplicates the whole repo; rebuild with scripts/build-plugin.mjs.
+*.plugin
